@@ -1,4 +1,4 @@
-# Provisioning  a custom Jupyter notebook on Puhti web interface for NMRLipids course
+# Provisioning  a custom Jupyter notebook on Puhti web interface for NMRLipids course (WIP)
 
 Computational environment for NMRLipids course (AKA, NMRlipids summer school 2022) at CSC supercomputer (Puhti) can be accessed using a custom Jupyter notebook provisioned through Puhti web interface (https://www.puhti.csc.fi). The customisation of environment involves the following steps:
 
@@ -16,10 +16,7 @@ Computational environment for NMRLipids course (AKA, NMRlipids summer school 202
 3. Once login is successfull, select "Apps" on the top menu bar and then click "Gromacs course". Fill all the necessary information ( e.g., select your CSC project, partition (use "small" when using reservation), computing resources among others) and then click "Launch" 
 4. Upon successful launching a job, you can see the following window: 
 
-<img src="./OoD_gromacs.png" width="100%">
-
 5. Click on "Connect to VNC" to launch GUI desktop to then VMD (see below picture) 
-<img src="./vmd.png" width="100%">
 7. Again on OoD job page, click on "Connect to Jupyter" to launch Gromacs notebook.
 
 
