@@ -1,5 +1,5 @@
 -- Jupyter
-prepend_path("PATH", "/projappl/project_xxxxx/yetukuri/NMRLipids/bin")
+prepend_path("PATH", "/projappl/project_xxxxx/NMRLipids/bin")
 
 setenv("_COURSE_BASE_NAME", "NMRLipids")
 setenv("_COURSE_NOTEBOOK", "DatabankExercises/APL/AreaPerLipidAndThicknessExamples.ipynb")
