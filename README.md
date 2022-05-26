@@ -1,11 +1,11 @@
 # Provisioning  a custom Jupyter notebook on Puhti web interface for NMRLipids course (WIP)
 
-Computational environment for NMRLipids course (AKA, NMRlipids summer school 2022) at CSC supercomputer (Puhti) can be accessed using a custom Jupyter notebook provisioned through Puhti web interface (https://www.puhti.csc.fi). The customisation of environment involves the following steps:
+Computational environment for NMRLipids course (NMRlipids summer school 2022) at CSC supercomputer (Puhti) can be accessed using a custom Jupyter notebook provisioned through [Puhti web interface](https://www.puhti.csc.fi). The customisation of environment involves the following steps:
 
-- [Installing necessary python packages to projappl directory using tykky] (#Installing-necessary-python-packages-to-projappl-directory-using-tykky)
-- [Creating a course environment/module(s)](#Creating a course environment/module(s))
-- Accessing notebook via Puhti web interface
-- [Useful CSC documentation](#Useful CSC documentation)
+- [Installing necessary python packages to projappl directory using tykky](#installing-necessary-python-packages-to-projappl-directory-using-tykky)
+- [Creating a course environment/module(s)](#creating-a-course-environment-modules)
+- [Accessing notebook via Puhti web interface](#accessing-notebook-via-puhti-web-interface)
+- [Useful CSC documentation](useful-CSC-documentation)
 
 ### Installing necessary python packages to projappl directory using tykky:
 
@@ -15,7 +15,18 @@ Additionally, Tykky will generate wrappers so that installed software can be use
 
 This documentation covers a subset of the functionality and focuses on conda and Python, a large part of the advanced use-cases are not covered here yet.
 
+### Creating a course environment modules
 
+The files for course environments (modules) can be created in /projappl/<project>/www_puhti_modules/. The www_puhti_modules directory can be created if it does not exist.
+
+The course environment is only visible for the project that it was created for. Note that you may need to Restart Web Server in the Help menu in the web interface if the course environment is not visible in the form after creating the files and selecting the correct project.
+
+Two files are needed for the course modules:
+
+    a <course>.lua file that defines the module that sets up the Python environment. Only files containing the text Jupyter will be visible in the app.
+    a <course>-resources.yml that defines the default resources used for Jupyter.
+  
+    
 ### Accessing notebook via Puhti web interface
 
 1. Access Open OnDemand (OoD) interface on [Puhti login page](https://www.puhti.csc.fi/public/login.html)
@@ -30,17 +41,7 @@ This documentation covers a subset of the functionality and focuses on conda and
 7. Again on OoD job page, click on "Connect to Jupyter" to launch Gromacs notebook.
 
 
-### Creating a course environment/module(s)
 
-The files for course environments (modules) can be created in /projappl/<project>/www_puhti_modules/. The www_puhti_modules directory can be created if it does not exist.
-
-The course environment is only visible for the project that it was created for. Note that you may need to Restart Web Server in the Help menu in the web interface if the course environment is not visible in the form after creating the files and selecting the correct project.
-
-Two files are needed for the course modules:
-
-    a <course>.lua file that defines the module that sets up the Python environment. Only files containing the text Jupyter will be visible in the app.
-    a <course>-resources.yml that defines the default resources used for Jupyter.
-  
 
 ###  Useful CSC documentation
 
