@@ -1,6 +1,6 @@
 # Provisioning  a custom Jupyter notebook on Puhti web interface for NMRLipids course (WIP)
 
-Computational environment for NMRLipids course (NMRlipids summer school 2022) at CSC supercomputer (Puhti) can be accessed using a custom Jupyter notebook provisioned through [Puhti web interface](https://www.puhti.csc.fi). The customisation of environment involves the following steps:
+Computational environment for NMRLipids course (NMRlipids summer school 2022) on Puhti (a CSC supercomputer) can be accessed using a custom Jupyter notebook provisioned through [Puhti web interface](https://www.puhti.csc.fi). The customisation of environment involves the following steps:
 
 - [Installing necessary python packages to projappl directory using tykky](#installing-necessary-python-packages-to-projappl-directory-using-tykky)
 - [Creating a course environment/module(s)](#creating-a-course-environment-modules)
