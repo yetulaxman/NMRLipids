@@ -29,32 +29,32 @@ Tykky will install all needed packages (as mentioned in env_nmr.yml) to the dire
 
 The files for course environments (modules) can be created in /projappl/project_xxxx/www_puhti_modules/. The www_puhti_modules directory can be created if it does not exist.
 
-```bash
-mkdir /projappl/project_xxxx/www_puhti_modules
-
-
-The course environment is only visible for the project that it was created for. Note that you may need to Restart Web Server in the Help menu in the web interface if the course environment is not visible in the form after creating the files and selecting the correct project.
-
 Two files are needed for the course modules:
 
     a <course>.lua file that defines the module that sets up the Python environment. Only files containing the text Jupyter will be visible in the app.
     a <course>-resources.yml that defines the default resources used for Jupyter.
   
+For this NMRLipids course, the two files are created for you in the git repo we have cloned above. so just copy them to appropriate place in projappl folder.
+
+```bash
+
+mkdir /projappl/project_xxxx/www_puhti_modules && cp NMRLipids-course* /projappl/project_xxxx/www_puhti_modules
+
+# Edit the correct project numbers in the the copied files in /projappl/project_xxxx/www_puhti_modules
+
+```
+  
     
 ### Accessing notebook via Puhti web interface
 
-1. Access Open OnDemand (OoD) interface on [Puhti login page](https://www.puhti.csc.fi/public/login.html)
+1. Login to [Puhti web interface](https://www.puhti.csc.fi/public/login.html)
 2. Login with CSC or course credentials (Users should have accepted Puhti service in [myCSC](https://my.csc.fi/welcome) page under a course ( or own) project before using this service). Login page is as shown below:
 
 <img src="./Puhti_login.png" width="80%">
 
-3. Once login is successfull, select "Apps" on the top menu bar and then click "Gromacs course". Fill all the necessary information ( e.g., select your CSC project, partition (use "small" when using reservation), computing resources among others) and then click "Launch" 
-4. Upon successful launching a job, you can see the following window: 
+3. Once login is successfull, select "Interactive Sessions" on the top menu bar and then click "Jupyter for courses".  Select the Working directory corresponding to course project. Then you will be able to see "NMRLipids-course" module under the "Course module" field. You can the launch Jupyter notebook whick will be launched in the interaction partition by default. You can also change the default settings by checking "Show custom resource settings"
 
-5. Click on "Connect to VNC" to launch GUI desktop to then VMD (see below picture) 
-7. Again on OoD job page, click on "Connect to Jupyter" to launch Gromacs notebook.
-
-
+4. Upon successful launching a job, you can click on "connect to Jupyter" to see the course notebook corresponidng to NMRLipids course.
 
 
 ###  Useful CSC documentation
