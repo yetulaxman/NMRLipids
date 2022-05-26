@@ -7,9 +7,9 @@ Computational environment for NMRLipids course (NMRlipids summer school 2022) on
 - [Accessing notebook via Puhti web interface](#accessing-notebook-via-puhti-web-interface)
 - [Useful CSC documentation](useful-CSC-documentation)
 
-### Installing necessary python packages to projappl directory using tykky:
+### Installing necessary python packages to *projappl* directory using *tykky*:
 
-Tykky is a set of tools which wrap installations inside an Apptainer/Singularity container to improve startup times, reduce IO load, and lessen the number of files on large parallel filesystems.
+[Tykky](#https://docs.csc.fi/computing/containers/tykky/) is a set of tools which wrap installations inside an Apptainer/Singularity container to improve startup times, reduce IO load, and lessen the number of files on large parallel filesystems.
 
 Additionally, Tykky will generate wrappers so that installed software can be used (almost) as if it were not containerized. Depending on tool selection and settings, either the whole host filesystem or a limited subset is visible during execution and installation. This means that it's possible to wrap installation using e.g mpi4py relying on the host provided mpi installation.
 
