@@ -50,7 +50,7 @@ mkdir /projappl/project_xxxx/www_puhti_modules && cp NMRLipids-course* /projappl
 
 <img src="./Puhti_login.png" width="80%">
 
-3. Once login is successfull, select "Interactive Sessions" on the top menu bar and then click "Jupyter for courses". On the right hand side you can see the different fields for selection.  For this course, select the "Working directory corresponding"  to course project. Then you will be able to see "NMRLipids-course" module under the "Course module" field. You can then launch Jupyter notebook whick will be launched in the interaction partition by default. You can also change the default settings by checking "Show custom resource settings"
+3. Once login is successfull, select "Interactive Sessions" on the top menu bar and then click "Jupyter for courses". On the right hand side you can see the different fields for selection.  For this course, select the "Project" and "Working directory corresponding"  to course project. Then you will be able to see "NMRLipids-course" module under the "Course module" field. You can then launch Jupyter notebook whick will be launched in the interaction partition by default. You can also change the default settings by checking "Show custom resource settings"
 
 4. Upon successful launching a job, you can click on "connect to Jupyter" to see the course notebook corresponidng to NMRLipids course.
 
