@@ -20,7 +20,7 @@ git clone https://github.com/yetulaxman/NMRLipids.git # has all necessary script
 cd NMRLipids 
 module load tykky
 mkdir /projappl/project_xxxx/NMRLipids
-conda-containerize new --prefix /projappl/project_xxxx/NMRLipids  env_nmr.yml 
+conda-containerize new --prefix /projappl/project_xxxx/NMRLipids  env_nmr.yml  # this can take a while
 
 ```
 Tykky will install all needed packages (as mentioned in the file, *env_nmr.yml*) to the directory '/projappl/project_xxxx/NMRLipids'
