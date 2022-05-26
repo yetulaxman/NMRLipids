@@ -16,17 +16,22 @@ For the installation of computational environment required for NMRLIpids course,
 ```bash
 cd /scartch/project_xxxx/
 git clone https://github.com/NMRLipids/Databank.git
-mkdir NMRLipids  && cd NMRLipids 
-
+git clone https://github.com/yetulaxman/NMRLipids.git
+cd NMRLipids 
 module load tykky
 mkdir /projappl/project_xxxx/NMRLipids
 conda-containerize new --prefix /projappl/project_xxxx/NMRLipids  env_nmr.yml 
 
 ```
-Tykky will install all needed packages (as mentioned in env_nmr.yml)
+Tykky will install all needed packages (as mentioned in env_nmr.yml) to the directory '/projappl/project_xxxx/NMRLipids'
+
 ### Creating a course environment modules
 
-The files for course environments (modules) can be created in /projappl/<project>/www_puhti_modules/. The www_puhti_modules directory can be created if it does not exist.
+The files for course environments (modules) can be created in /projappl/project_xxxx/www_puhti_modules/. The www_puhti_modules directory can be created if it does not exist.
+
+```bash
+mkdir /projappl/project_xxxx/www_puhti_modules
+
 
 The course environment is only visible for the project that it was created for. Note that you may need to Restart Web Server in the Help menu in the web interface if the course environment is not visible in the form after creating the files and selecting the correct project.
 
