@@ -4,9 +4,13 @@ Computational environment for NMRLipids course (AKA, NMRlipids summer school 202
 
 - [Installing necessary python packages to projappl directory using tykky] (#Installing-necessary-python-packages-to-projappl-directory-using-tykky)
 - [Creating a course environment/module(s)](#Creating a course environment/module(s))
+- Accessing notebook via Puhti web interface
 - [Useful CSC documentation](#Useful CSC documentation)
 
 ### Installing necessary python packages to projappl directory using tykky:
+
+
+### Accessing notebook via Puhti web interface
 
 1. Access Open OnDemand (OoD) interface on [Puhti login page](https://www.puhti.csc.fi/public/login.html)
 2. Login with CSC or course credentials (Users should have accepted Puhti service in [myCSC](https://my.csc.fi/welcome) page under a course ( or own) project before using this service). Login page is as shown below:
