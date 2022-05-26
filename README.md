@@ -14,12 +14,16 @@ Tykky wraps installations inside singularity container for improved performance 
 For the installation of computational environment required for NMRLIpids course, we use the tykky in the following way:
 
 ```bash
-module load tykky
+cd /scartch/project_xxxx/
+git clone https://github.com/NMRLipids/Databank.git
+mkdir NMRLipids  && cd NMRLipids 
 
+module load tykky
+mkdir /projappl/project_xxxx/NMRLipids
 conda-containerize new --prefix /projappl/project_xxxx/NMRLipids  env_nmr.yml 
 
 ```
-
+Tykky will install all needed packages (as mentioned in env_nmr.yml)
 ### Creating a course environment modules
 
 The files for course environments (modules) can be created in /projappl/<project>/www_puhti_modules/. The www_puhti_modules directory can be created if it does not exist.
