@@ -29,10 +29,9 @@ Tykky will install all needed packages (as mentioned in env_nmr.yml) to the dire
 
 The files for course environments (modules) can be created in /projappl/project_xxxx/www_puhti_modules/. The www_puhti_modules directory can be created if it does not exist.
 
-Two files are needed for the course modules:
-
-    a <course>.lua file that defines the module that sets up the Python environment. Only files containing the text Jupyter will be visible in the app.
-    a <course>-resources.yml that defines the default resources used for Jupyter.
+Two files are needed for the course modules :
+   - a <<course_name>>.lua file that defines the module that sets up the Python environment. Only files containing the text Jupyter will be visible in the app.
+   - a <<course_name>>-resources.yml that defines the default resources used for Jupyter.
   
 For this NMRLipids course, the two files are created for you in the git repo we have cloned above. so just copy them to appropriate place in projappl folder.
 
