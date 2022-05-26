@@ -1,6 +1,6 @@
 # Provisioning  a custom Jupyter notebook on Puhti web interface for NMRLipids course (WIP)
 
-Computational environment for NMRLipids course (NMRlipids summer school 2022) on Puhti (a CSC supercomputer) can be accessed using a custom Jupyter notebook provisioned through [Puhti web interface](https://www.puhti.csc.fi). The customisation of environment involves the following steps:
+A custom Jupyter notebook for NMRLipids course (NMRlipids summer school 2022) can be provisioned through [Puhti web interface](https://www.puhti.csc.fi). The customisation of computational environment involves the following steps:
 
 - [Installing necessary python packages to projappl directory using tykky](#installing-necessary-python-packages-to-projappl-directory-using-tykky)
 - [Creating a course environment/module(s)](#creating-a-course-environment-modules)
@@ -9,11 +9,16 @@ Computational environment for NMRLipids course (NMRlipids summer school 2022) on
 
 ### Installing necessary python packages to *projappl* directory using *tykky*:
 
-[Tykky](#https://docs.csc.fi/computing/containers/tykky/) is a set of tools which wrap installations inside an Apptainer/Singularity container to improve startup times, reduce IO load, and lessen the number of files on large parallel filesystems.
+Tykky wraps installations inside singularity container for improved performance cinluding faster startup times, reduced IO load, and  few number of files on large parallel filesystems. Please refer to CSC documentation on Tykky](#https://docs.csc.fi/computing/containers/tykky/) for more detailed information.
 
-Additionally, Tykky will generate wrappers so that installed software can be used (almost) as if it were not containerized. Depending on tool selection and settings, either the whole host filesystem or a limited subset is visible during execution and installation. This means that it's possible to wrap installation using e.g mpi4py relying on the host provided mpi installation.
+For the installation of computational environment required for NMRLIpids course, we use the tykky in the following way:
 
-This documentation covers a subset of the functionality and focuses on conda and Python, a large part of the advanced use-cases are not covered here yet.
+```bash
+module load tykky
+
+conda-containerize new --prefix /projappl/project_xxxx/NMRLipids  env_nmr.yml 
+
+```
 
 ### Creating a course environment modules
 
