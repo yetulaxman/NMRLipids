@@ -39,7 +39,7 @@ For this NMRLipids course, the above mentioned two files are created  in the git
 
 mkdir /projappl/project_xxxx/www_puhti_modules && cp NMRLipids-course* /projappl/project_xxxx/www_puhti_modules
 
-# Edit the correct project numbers in the the copied files in /projappl/project_xxxx/www_puhti_modules
+# Edit the correct project number (in two places in NMRLipids-course.lua file) in the the copied files in /projappl/project_xxxx/www_puhti_modules.
 
 ```
     
