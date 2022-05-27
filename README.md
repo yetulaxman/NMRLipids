@@ -23,13 +23,13 @@ mkdir /projappl/project_xxxx/NMRLipids
 conda-containerize new --prefix /projappl/project_xxxx/NMRLipids  env_nmr.yml  # this can take a while
 
 ```
-Tykky will install all needed packages (as mentioned in the file, *env_nmr.yml*) to the directory '/projappl/project_xxxx/NMRLipids'
+Tykky will install all needed packages (as listed in the file, *env_nmr.yml*) to the directory '/projappl/project_xxxx/NMRLipids'
 
 ### Creating a course environment modules
 
 The files for course environments (modules) can be created in the directory /projappl/project_xxxx/www_puhti_modules/. The www_puhti_modules directory can be created if it does not exist.
 
-Two files are needed for the course modules are:
+The two files needed for the course modules are:
    - a <<course_name>>.lua file that defines the module that sets up the Python environment. Only files containing the text Jupyter will be visible in the app.
    - a <<course_name>>-resources.yml that defines the default resources used for Jupyter.
   
