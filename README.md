@@ -11,7 +11,7 @@ A custom Jupyter notebook for NMRLipids course (NMRlipids summer school 2022) ca
 
 Tykky wraps installations inside singularity container for improved performance metrics including faster startup times, reduced IO load, and  fewer number of files on large parallel filesystems. Please refer to CSC documentation on [tykky](https://docs.csc.fi/computing/containers/tykky/) for more detailed information.
 
-For the installation of computational environment required for NMRLIpids course, we use the tykky in the following way (edit the correct project numbers as needed):
+For the installation of computational environment required for NMRLIpids course, we use the tykky in the following way (make sure to edit with correct CSC project name as needed):
 
 ```bash
 cd /scartch/project_xxxx/
@@ -29,7 +29,7 @@ Tykky will install all needed packages (as listed in the file, *env_nmr.yml*) to
 
 The files for course environments (modules) can be created in the directory /projappl/project_xxxx/www_puhti_modules/. The www_puhti_modules directory can be created if it does not exist.
 
-The two files needed for the course modules are:
+The two files needed for setting up the course modules are:
    - a <<course_name>>.lua file that defines the module that sets up the Python environment. Only files containing the text Jupyter will be visible in the app.
    - a <<course_name>>-resources.yml that defines the default resources used for Jupyter.
   
