@@ -9,7 +9,7 @@ A custom Jupyter notebook for NMRLipids course (NMRlipids summer school 2022) ca
 
 ### Installing necessary python packages to *projappl* directory using *tykky*:
 
-Tykky wraps installations inside singularity container for improved performance including faster startup times, reduced IO load, and  few number of files on large parallel filesystems. Please refer to CSC documentation on [tykky](https://docs.csc.fi/computing/containers/tykky/) for more detailed information.
+Tykky wraps installations inside singularity container for improved performance metrics including faster startup times, reduced IO load, and  fewer number of files on large parallel filesystems. Please refer to CSC documentation on [tykky](https://docs.csc.fi/computing/containers/tykky/) for more detailed information.
 
 For the installation of computational environment required for NMRLIpids course, we use the tykky in the following way:
 
