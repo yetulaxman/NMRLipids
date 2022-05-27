@@ -23,7 +23,7 @@ mkdir /projappl/project_xxxx/NMRLipids
 conda-containerize new --prefix /projappl/project_xxxx/NMRLipids  env_nmr.yml  # this can take a while
 
 ```
-Tykky will install all needed packages (as listed in the file, *env_nmr.yml*) to the directory '/projappl/project_xxxx/NMRLipids'
+Tykky would install all needed packages (as listed in the file, *env_nmr.yml*) to the directory '/projappl/project_xxxx/NMRLipids'
 
 ### Creating a course environment modules
 
@@ -33,7 +33,7 @@ The two files needed for setting up the course modules are:
    - a <<course_name>>.lua file that defines the module that sets up the Python environment. Only files containing the text Jupyter will be visible in the app.
    - a <<course_name>>-resources.yml that defines the default resources used for Jupyter.
   
-For this NMRLipids course, the above mentioned two files are created  in the git repository we have cloned above. so just copy them to appropriate place in projappl folder and edit the correct project for this course as below:
+For this NMRLipids course, the above mentioned two files are created  in the git repository we cloned above. so just copy them over to appropriate place in projappl folder and edit the correct project for this course as below:
 
 ```bash
 
@@ -50,7 +50,7 @@ mkdir /projappl/project_xxxx/www_puhti_modules && cp NMRLipids-course* /projappl
 
 <img src="./Puhti_login.png" width="80%">
 
-3. Once login is successfull, select "Interactive Sessions" on the top menu bar and then click "Jupyter for courses". On the right hand side you can see the different fields for selection.  For this course, select the "Project" and "Working directory corresponding"  to course project. Then you will be able to see "NMRLipids-course" module under the "Course module" field. You can then launch Jupyter notebook whick will be launched in the interaction partition by default. You can also change the default settings by checking "Show custom resource settings". Note that when I setup this course module in a different project, it took sometime before I see the course module (i.e., under "Course module" field) in the Puhti-web-interface (weird !). refresh/open fresh browser !
+3. Once login is successfull, select "Interactive Sessions" on the top menu bar and then click "Jupyter for courses". On the right hand side you can see the different fields for selection before launching a job.  For this course, select the "Project" and "Working directory corresponding"  to course project. Then you will be able to see "NMRLipids-course" module under the "Course module" field. You can then launch Jupyter notebook whick will be launched in the interaction partition by default. You can also change the default settings by checking "Show custom resource settings". Note that when I setup this course module in a different project, it took sometime before I see the course module (i.e., under "Course module" field) in the Puhti-web-interface (weird !). refresh/open fresh browser !
 
 4. Upon successful launching a job, you can click on "connect to Jupyter" to see the course notebook corresponidng to NMRLipids course.
 
